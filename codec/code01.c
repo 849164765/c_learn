@@ -131,7 +131,6 @@
 //	return 0;
 //}
 
-
 //输入一个正整数n(1<n<=10)，再输入n个整数，编写程序将一维数组中的数按逆序重新存放并输出，程序中不使用辅助数组。
 
 //int main()
@@ -161,16 +160,73 @@
 //	return 0;
 //}
 
+//输入一个正整数n(1<n<=10)，再输入n个整数（最小值为0，最大值为9），存放在一维数组中，统计每个值出现的次数，找到出现次数最多的值并输出。
 
-int main()
-{
-	int arr[10];
-	int n, i, j, tmp;
-	scanf("%d", &n);
-	for (i = 0; i < n; i++)scanf("%d", &arr[i]);
+//int main()
+//{
+//	int arr[10];
+//	int n, i, j, count=0,max=0,num=0;
+//	scanf("%d", &n);
+//	for (i = 0; i < n; i++)scanf("%d", &arr[i]);
+//	for (i = 0; i < n; i++)
+//	{
+//		count = 0;
+//		for (j = i + 1; j < n; j++)
+//		{
+//			if (arr[i] != -1 && arr[i] == arr[j])
+//			{
+//				count++;
+//				arr[j] = -1;
+//			}
+//		}
+//		if (max < count)
+//		{
+//			max = count;
+//			num = arr[i];
+//		}
+//
+//		arr[i] = -1;
+//
+//	}
+//	printf("%d appears %d times", num, max+1);
+//
+//
+//
+//
+//
+//	return 0;
+//}
 
 
+//求A B差集
 
-
-	return 0;
-}
+//int main()
+//{
+//	int arr1[10];
+//	int arr2[10];
+//	int i,j,a,n1=0,n2=0;
+//	for (i = 0;; i++)
+//	{
+//		scanf("%d", &arr1[i]);
+//		a = arr1[i];
+//		n1++;
+//		if (a == -1)break;
+//	}
+//	for (i = 0;; i++)
+//	{
+//		scanf("%d", &arr2[i]);
+//		a = arr2[i];
+//		n2++;
+//		if (a == -1)break;
+//	}
+//	for (i = 0; i < n1; i++)
+//	{
+//		for (j = 0; j < n2; j++)
+//		{
+//			if (arr1[i] == arr2[j])break;
+//
+//		}
+//		if (j == n2)printf("%d ", arr1[i]);
+//	}
+//
+//}
